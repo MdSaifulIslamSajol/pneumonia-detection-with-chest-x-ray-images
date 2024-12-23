@@ -1,0 +1,459 @@
+learning rate  : 0.0001
+batch_size : 100
+cuda
+len(trainset): 5216
+len(testset): 624
+Number of images for each class in the training set:
+NORMAL: 1341
+PNEUMONIA: 3875
+
+Number of images for each class in the test set:
+NORMAL: 234
+PNEUMONIA: 390
+['NORMAL', 'PNEUMONIA']
+{'NORMAL': 0, 'PNEUMONIA': 1}
+torch.Size([64, 3, 224, 224])
+torch.Size([64])
+= = = = = = = = flag 1.11 = = = = = = = = = = = = =
+
+
+Training started with  Swinv2ForImageClassification
+== Swinv2ForImageClassification ==
+Best model saved with test accuracy: 90.7051% at epoch 1
+Epoch : 001, Training: Loss: 0.1931, Accuracy: 91.3727%, Validation : Loss : 0.2630, Accuracy: 90.7051%, Time: 171.3046s
+Best model saved with test accuracy: 92.9487% at epoch 2
+Epoch : 002, Training: Loss: 0.0909, Accuracy: 96.4149%, Validation : Loss : 0.2284, Accuracy: 92.9487%, Time: 169.6270s
+flag1
+Last epoch :  2
+Training Finished for   Swinv2ForImageClassification
+len(train_acc_list)  2
+len(valid_acc_list)  2
+== On test data ==
+Test Accuracy: 92.9487%
+Precision: 0.9430
+Recall: 0.9094
+F1 Score: 0.9221
+Average Inference Time per Image: 0.0001335810 seconds
+Confusion Matrix:
+[[194  40]
+ [  4 386]]
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.9798    0.8291    0.8981       234
+           1     0.9061    0.9897    0.9461       390
+
+    accuracy                         0.9295       624
+   macro avg     0.9430    0.9094    0.9221       624
+weighted avg     0.9337    0.9295    0.9281       624
+
+Class 0: Accuracy = 82.91%
+Class 1: Accuracy = 98.97%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+finished for  Swinv2ForImageClassification
+
+
+Training started with  ViTForImageClassification
+== ViTForImageClassification ==
+Best model saved with test accuracy: 85.7372% at epoch 1
+Epoch : 001, Training: Loss: 0.1825, Accuracy: 92.9256%, Validation : Loss : 0.3534, Accuracy: 85.7372%, Time: 196.8506s
+Best model saved with test accuracy: 90.3846% at epoch 2
+Epoch : 002, Training: Loss: 0.0790, Accuracy: 97.3351%, Validation : Loss : 0.2418, Accuracy: 90.3846%, Time: 194.2669s
+flag1
+Last epoch :  2
+Training Finished for   ViTForImageClassification
+len(train_acc_list)  2
+len(valid_acc_list)  2
+== On test data ==
+Test Accuracy: 90.3846%
+Precision: 0.9190
+Recall: 0.8786
+F1 Score: 0.8928
+Average Inference Time per Image: 0.0000201628 seconds
+Confusion Matrix:
+[[182  52]
+ [  8 382]]
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.9579    0.7778    0.8585       234
+           1     0.8802    0.9795    0.9272       390
+
+    accuracy                         0.9038       624
+   macro avg     0.9190    0.8786    0.8928       624
+weighted avg     0.9093    0.9038    0.9014       624
+
+Class 0: Accuracy = 77.78%
+Class 1: Accuracy = 97.95%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+finished for  ViTForImageClassification
+
+
+Training started with  ConvNextV2ForImageClassification
+== ConvNextV2ForImageClassification ==
+Best model saved with test accuracy: 90.3846% at epoch 1
+Epoch : 001, Training: Loss: 0.1369, Accuracy: 94.7086%, Validation : Loss : 0.2338, Accuracy: 90.3846%, Time: 169.6195s
+Best model saved with test accuracy: 91.6667% at epoch 2
+Epoch : 002, Training: Loss: 0.0547, Accuracy: 98.0637%, Validation : Loss : 0.2037, Accuracy: 91.6667%, Time: 169.6090s
+flag1
+Last epoch :  2
+Training Finished for   ConvNextV2ForImageClassification
+len(train_acc_list)  2
+len(valid_acc_list)  2
+== On test data ==
+Test Accuracy: 91.6667%
+Precision: 0.9096
+Recall: 0.9137
+F1 Score: 0.9116
+Average Inference Time per Image: 0.0000220094 seconds
+Confusion Matrix:
+[[211  23]
+ [ 29 361]]
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.8792    0.9017    0.8903       234
+           1     0.9401    0.9256    0.9328       390
+
+    accuracy                         0.9167       624
+   macro avg     0.9096    0.9137    0.9116       624
+weighted avg     0.9173    0.9167    0.9169       624
+
+Class 0: Accuracy = 90.17%
+Class 1: Accuracy = 92.56%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+finished for  ConvNextV2ForImageClassification
+
+
+Training started with  CvtForImageClassification
+== CvtForImageClassification ==
+Best model saved with test accuracy: 87.8205% at epoch 1
+Epoch : 001, Training: Loss: 0.2497, Accuracy: 88.0560%, Validation : Loss : 0.3215, Accuracy: 87.8205%, Time: 164.1712s
+Best model saved with test accuracy: 89.4231% at epoch 2
+Epoch : 002, Training: Loss: 0.1926, Accuracy: 91.7753%, Validation : Loss : 0.3016, Accuracy: 89.4231%, Time: 163.0977s
+flag1
+Last epoch :  2
+Training Finished for   CvtForImageClassification
+len(train_acc_list)  2
+len(valid_acc_list)  2
+== On test data ==
+Test Accuracy: 89.4231%
+Precision: 0.9158
+Recall: 0.8641
+F1 Score: 0.8807
+Average Inference Time per Image: 0.0000412515 seconds
+Confusion Matrix:
+[[174  60]
+ [  6 384]]
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.9667    0.7436    0.8406       234
+           1     0.8649    0.9846    0.9209       390
+
+    accuracy                         0.8942       624
+   macro avg     0.9158    0.8641    0.8807       624
+weighted avg     0.9030    0.8942    0.8908       624
+
+Class 0: Accuracy = 74.36%
+Class 1: Accuracy = 98.46%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+finished for  CvtForImageClassification
+
+
+Training started with  EfficientFormerForImageClassification
+== EfficientFormerForImageClassification ==
+Best model saved with test accuracy: 87.6603% at epoch 1
+Epoch : 001, Training: Loss: 0.1760, Accuracy: 93.0215%, Validation : Loss : 0.3452, Accuracy: 87.6603%, Time: 149.4714s
+Best model saved with test accuracy: 89.7436% at epoch 2
+Epoch : 002, Training: Loss: 0.0624, Accuracy: 97.6227%, Validation : Loss : 0.3049, Accuracy: 89.7436%, Time: 149.1414s
+flag1
+Last epoch :  2
+Training Finished for   EfficientFormerForImageClassification
+len(train_acc_list)  2
+len(valid_acc_list)  2
+== On test data ==
+Test Accuracy: 89.7436%
+Precision: 0.9146
+Recall: 0.8701
+F1 Score: 0.8852
+Average Inference Time per Image: 0.0000161741 seconds
+Confusion Matrix:
+[[178  56]
+ [  8 382]]
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.9570    0.7607    0.8476       234
+           1     0.8721    0.9795    0.9227       390
+
+    accuracy                         0.8974       624
+   macro avg     0.9146    0.8701    0.8852       624
+weighted avg     0.9040    0.8974    0.8945       624
+
+Class 0: Accuracy = 76.07%
+Class 1: Accuracy = 97.95%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+finished for  EfficientFormerForImageClassification
+
+
+Training started with  PvtV2ForImageClassification
+== PvtV2ForImageClassification ==
+Best model saved with test accuracy: 89.9038% at epoch 1
+Epoch : 001, Training: Loss: 0.2018, Accuracy: 91.9479%, Validation : Loss : 0.2557, Accuracy: 89.9038%, Time: 159.1977s
+Epoch : 002, Training: Loss: 0.0773, Accuracy: 97.2009%, Validation : Loss : 0.5155, Accuracy: 85.7372%, Time: 158.9396s
+flag1
+Last epoch :  2
+Training Finished for   PvtV2ForImageClassification
+len(train_acc_list)  2
+len(valid_acc_list)  2
+== On test data ==
+Test Accuracy: 89.9038%
+Precision: 0.9015
+Recall: 0.8816
+F1 Score: 0.8898
+Average Inference Time per Image: 0.0000225521 seconds
+Confusion Matrix:
+[[190  44]
+ [ 19 371]]
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.9091    0.8120    0.8578       234
+           1     0.8940    0.9513    0.9217       390
+
+    accuracy                         0.8990       624
+   macro avg     0.9015    0.8816    0.8898       624
+weighted avg     0.8996    0.8990    0.8978       624
+
+Class 0: Accuracy = 81.20%
+Class 1: Accuracy = 95.13%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+finished for  PvtV2ForImageClassification
+
+
+Training started with  MobileViTV2ForImageClassification
+== MobileViTV2ForImageClassification ==
+Best model saved with test accuracy: 89.4231% at epoch 1
+Epoch : 001, Training: Loss: 0.3946, Accuracy: 85.3336%, Validation : Loss : 0.2823, Accuracy: 89.4231%, Time: 153.3616s
+Epoch : 002, Training: Loss: 0.1198, Accuracy: 96.8175%, Validation : Loss : 0.3189, Accuracy: 86.8590%, Time: 152.9579s
+flag1
+Last epoch :  2
+Training Finished for   MobileViTV2ForImageClassification
+len(train_acc_list)  2
+len(valid_acc_list)  2
+== On test data ==
+Test Accuracy: 89.4231%
+Precision: 0.9010
+Recall: 0.8726
+F1 Score: 0.8834
+Average Inference Time per Image: 0.0000230104 seconds
+Confusion Matrix:
+[[184  50]
+ [ 16 374]]
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.9200    0.7863    0.8479       234
+           1     0.8821    0.9590    0.9189       390
+
+    accuracy                         0.8942       624
+   macro avg     0.9010    0.8726    0.8834       624
+weighted avg     0.8963    0.8942    0.8923       624
+
+Class 0: Accuracy = 78.63%
+Class 1: Accuracy = 95.90%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+finished for  MobileViTV2ForImageClassification
+
+
+Training started with  resnet50ForImageClassification
+== resnet50ForImageClassification ==
+Best model saved with test accuracy: 92.6282% at epoch 1
+Epoch : 001, Training: Loss: 0.1122, Accuracy: 96.1656%, Validation : Loss : 0.2079, Accuracy: 92.6282%, Time: 156.1635s
+Epoch : 002, Training: Loss: 0.0498, Accuracy: 98.1979%, Validation : Loss : 0.2308, Accuracy: 91.5064%, Time: 155.5782s
+flag1
+Last epoch :  2
+Training Finished for   resnet50ForImageClassification
+len(train_acc_list)  2
+len(valid_acc_list)  2
+== On test data ==
+Test Accuracy: 92.6282%
+Precision: 0.9203
+Recall: 0.9231
+F1 Score: 0.9216
+Average Inference Time per Image: 0.0000163739 seconds
+Confusion Matrix:
+[[213  21]
+ [ 25 365]]
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.8950    0.9103    0.9025       234
+           1     0.9456    0.9359    0.9407       390
+
+    accuracy                         0.9263       624
+   macro avg     0.9203    0.9231    0.9216       624
+weighted avg     0.9266    0.9263    0.9264       624
+
+Class 0: Accuracy = 91.03%
+Class 1: Accuracy = 93.59%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+finished for  resnet50ForImageClassification
+
+
+Training started with  vgg16ForImageClassification
+== vgg16ForImageClassification ==
+Best model saved with test accuracy: 87.9808% at epoch 1
+Epoch : 001, Training: Loss: 0.1975, Accuracy: 92.1971%, Validation : Loss : 0.3365, Accuracy: 87.9808%, Time: 169.3759s
+Best model saved with test accuracy: 91.9872% at epoch 2
+Epoch : 002, Training: Loss: 0.0921, Accuracy: 96.7600%, Validation : Loss : 0.2469, Accuracy: 91.9872%, Time: 169.4952s
+flag1
+Last epoch :  2
+Training Finished for   vgg16ForImageClassification
+len(train_acc_list)  2
+len(valid_acc_list)  2
+== On test data ==
+Test Accuracy: 91.9872%
+Precision: 0.9179
+Recall: 0.9103
+F1 Score: 0.9138
+Average Inference Time per Image: 0.0000045915 seconds
+Confusion Matrix:
+[[204  30]
+ [ 20 370]]
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.9107    0.8718    0.8908       234
+           1     0.9250    0.9487    0.9367       390
+
+    accuracy                         0.9199       624
+   macro avg     0.9179    0.9103    0.9138       624
+weighted avg     0.9196    0.9199    0.9195       624
+
+Class 0: Accuracy = 87.18%
+Class 1: Accuracy = 94.87%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+finished for  vgg16ForImageClassification
+
+
+Training started with  mobilenetForImageClassification
+== mobilenetForImageClassification ==
+Best model saved with test accuracy: 83.4936% at epoch 1
+Epoch : 001, Training: Loss: 0.1322, Accuracy: 94.9195%, Validation : Loss : 0.4614, Accuracy: 83.4936%, Time: 147.2643s
+Best model saved with test accuracy: 89.9038% at epoch 2
+Epoch : 002, Training: Loss: 0.0583, Accuracy: 97.9103%, Validation : Loss : 0.2451, Accuracy: 89.9038%, Time: 146.1617s
+flag1
+Last epoch :  2
+Training Finished for   mobilenetForImageClassification
+len(train_acc_list)  2
+len(valid_acc_list)  2
+== On test data ==
+Test Accuracy: 89.9038%
+Precision: 0.9207
+Recall: 0.8697
+F1 Score: 0.8863
+Average Inference Time per Image: 0.0000124440 seconds
+Confusion Matrix:
+[[176  58]
+ [  5 385]]
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.9724    0.7521    0.8482       234
+           1     0.8691    0.9872    0.9244       390
+
+    accuracy                         0.8990       624
+   macro avg     0.9207    0.8697    0.8863       624
+weighted avg     0.9078    0.8990    0.8958       624
+
+Class 0: Accuracy = 75.21%
+Class 1: Accuracy = 98.72%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+finished for  mobilenetForImageClassification
+
+
+Training started with  googlenetForImageClassification
+== googlenetForImageClassification ==
+Best model saved with test accuracy: 87.6603% at epoch 1
+Epoch : 001, Training: Loss: 0.1645, Accuracy: 94.0759%, Validation : Loss : 0.3221, Accuracy: 87.6603%, Time: 147.0394s
+Best model saved with test accuracy: 90.0641% at epoch 2
+Epoch : 002, Training: Loss: 0.0660, Accuracy: 97.5652%, Validation : Loss : 0.2510, Accuracy: 90.0641%, Time: 147.7233s
+flag1
+Last epoch :  2
+Training Finished for   googlenetForImageClassification
+len(train_acc_list)  2
+len(valid_acc_list)  2
+== On test data ==
+Test Accuracy: 90.0641%
+Precision: 0.9236
+Recall: 0.8709
+F1 Score: 0.8880
+Average Inference Time per Image: 0.0000167317 seconds
+Confusion Matrix:
+[[176  58]
+ [  4 386]]
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.9778    0.7521    0.8502       234
+           1     0.8694    0.9897    0.9257       390
+
+    accuracy                         0.9006       624
+   macro avg     0.9236    0.8709    0.8880       624
+weighted avg     0.9100    0.9006    0.8974       624
+
+Class 0: Accuracy = 75.21%
+Class 1: Accuracy = 98.97%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+finished for  googlenetForImageClassification
+
+
+Training started with  efficientnet_b0ForImageClassification
+== efficientnet_b0ForImageClassification ==
+Best model saved with test accuracy: 87.6603% at epoch 1
+Epoch : 001, Training: Loss: 0.2303, Accuracy: 92.2738%, Validation : Loss : 0.3336, Accuracy: 87.6603%, Time: 148.9653s
+Best model saved with test accuracy: 88.3013% at epoch 2
+Epoch : 002, Training: Loss: 0.0748, Accuracy: 97.3926%, Validation : Loss : 0.3223, Accuracy: 88.3013%, Time: 149.1195s
+flag1
+Last epoch :  2
+Training Finished for   efficientnet_b0ForImageClassification
+len(train_acc_list)  2
+len(valid_acc_list)  2
+== On test data ==
+Test Accuracy: 88.3013%
+Precision: 0.9166
+Recall: 0.8457
+F1 Score: 0.8655
+Average Inference Time per Image: 0.0000174355 seconds
+Confusion Matrix:
+[[163  71]
+ [  2 388]]
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.9879    0.6966    0.8170       234
+           1     0.8453    0.9949    0.9140       390
+
+    accuracy                         0.8830       624
+   macro avg     0.9166    0.8457    0.8655       624
+weighted avg     0.8988    0.8830    0.8777       624
+
+Class 0: Accuracy = 69.66%
+Class 1: Accuracy = 99.49%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+finished for  efficientnet_b0ForImageClassification
+= = = = = = = = execution finished = = = = = = = = = = = = =
